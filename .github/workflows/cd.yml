@@ -40,3 +40,6 @@ jobs:
 
       - name: push to google cloud
         run: gcloud builds submit --tag us-central1-docker.pkg.dev/project-c86dea89-d57c-4ba7-882/notely-ar-repo/imserhii/notely
+
+      - name: Deploy to Cloud Run
+        run: gcloud run deploy notely --image us-central1-docker.pkg.dev/project-c86dea89-d57c-4ba7-882/notely-ar-repo/imserhii/notely
